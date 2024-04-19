@@ -1,0 +1,143 @@
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+  }
+  
+  .product {
+    display: flex;
+    margin: 10px;
+    background-color: rgb(236, 235, 235);
+    flex-direction: column;
+    border: 1px solid #ccc;
+    box-shadow: 7px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    /* transition: transform 0.3s; */
+  }
+
+  .product:hover{
+    /* background-color: #ccc; */
+    transform: scale(1.05);
+  }
+  
+  .product .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .product .image img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+  
+  .product .description p {
+    margin: 0;
+    padding: 5px 0; 
+  }
+  
+  
+  .addToCartButton:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .product .image {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+
+  .addToCartButton{
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  .heartButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white; 
+    font-size: 24px;
+    border: black;
+  }
+
+  .shopTitle{
+    text-align: center;
+    font-size:xx-large;
+  }
+
+.in-stock {
+  color: green;
+}
+
+.out-of-stock {
+  color: red;
+}
+
+.dropdown{
+  border: 1px solid red;
+}
+ 
+ h1{
+  text-align: center;
+  font-size: xx-large;
+}
+
+h2{
+  text-align: center;
+}
+
+ .checkout1{
+  width: 150px;
+    height: 50px;
+    background-color: rgb(19,19,19);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer
+ }
+
+ .checkout1hidden{
+  visibility:hidden ;
+ }
+
+ .favoriteshop{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ }
+
+ .favoriteshop .favoriteproduct{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+ }
+
+ .trashButton{
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  margin-bottom: 10px;
+ }
+
+ .payment{
+  display: flex;
+  border: 1px solid red;
+  justify-content: center;
+  margin: 10px;
+  width: 50%;
+  align-items: center;
+ }
